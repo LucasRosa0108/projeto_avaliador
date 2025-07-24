@@ -1,0 +1,12 @@
+Requisitos do Sistema de Controle de Loja
+
+1. O sistema deve permitir o login e autenticação de usuários.
+2. O sistema deve possuir uma interface gráfica intuitiva usando Tkinter.
+3. Deve existir um controle de acesso via tela de login.
+4. O sistema deve permitir o cadastro, edição, exclusão e visualização de clientes.
+5. O sistema deve permitir o cadastro, edição, exclusão e visualização de produtos.
+6. As informações devem ser salvas e manipuladas usando banco de dados MySQL.
+7. A arquitetura do sistema deve seguir o padrão MVC (Model-View-Controller).
+8. O sistema deve estar versionado no GitHub com no mínimo 5 commits.
+9. O projeto deve conter documentação com algoritmo, requisitos e modelo de banco de dados.
+10. O sistema deve utilizar variáveis de ambiente para segurança da conexão com o banco.

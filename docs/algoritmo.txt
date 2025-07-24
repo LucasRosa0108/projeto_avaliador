@@ -1,0 +1,20 @@
+Algoritmo - Sistema de Controle de Loja
+
+1. Início do programa.
+2. Exibe a tela de login.
+3. Usuário informa email e senha.
+4. O sistema valida as credenciais no banco de dados.
+5. Se válido, redireciona para a tela principal (menu).
+6. O menu oferece as opções: Clientes, Produtos e Sair.
+7. Se o usuário clicar em Clientes:
+    7.1 Exibe a lista de clientes cadastrados.
+    7.2 Permite cadastrar novo cliente.
+    7.3 Permite editar ou excluir cliente existente.
+8. Se o usuário clicar em Produtos:
+    8.1 Exibe a lista de produtos cadastrados.
+    8.2 Permite cadastrar novo produto.
+    8.3 Permite editar ou excluir produto existente.
+9. Todas as operações CRUD são realizadas com persistência no banco de dados.
+10. O sistema utiliza os padrões MVC para organizar a aplicação.
+11. O sistema pode ser encerrado a qualquer momento pelo botão Sair.
+12. Fim do programa.
