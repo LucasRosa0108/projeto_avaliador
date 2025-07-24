@@ -1,7 +1,22 @@
 # app/database/migrations.py
-from app.database.connection import conectar
+import mysql.connector
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+def criar_banco():
+    conexao = mysql.connector.connect(
+        host=os.getenv("DB_HOST"),
+        user=os.getenv("DB_USER"),
+        password=os.getenv("DB_PASSWORD")
+    )
+    cursor = conexao.cursor()
+    cursor.execute(f"CREATE DATABASE IF NOT EXISTS {os.getenv('DB_NAME')}")
+    conexao.close()
 
 def criar_tabelas():
+    from app.database.connection import conectar
     db = conectar()
     cursor = db.cursor()
 
@@ -56,7 +71,8 @@ def criar_tabelas():
 
     db.commit()
     db.close()
-    print("Tabelas criadas com sucesso.")
+    print("Banco e tabelas criadas com sucesso.")
 
 if __name__ == '__main__':
+    criar_banco()
     criar_tabelas()
