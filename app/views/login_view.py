@@ -1,6 +1,10 @@
 import tkinter as tk
 from tkinter import messagebox
-from app.controllers.usuario_controller import UsuarioController
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+
+from controllers.usuario_controller import UsuarioController
 from app.views.menu_view import MenuView
 
 class LoginView:
