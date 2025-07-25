@@ -1,0 +1,51 @@
+1. usuarios
+
+id (PK)
+
+nome
+
+email (único)
+
+senha
+
+2. clientes
+
+id (PK)
+
+nome
+
+email
+
+telefone
+
+3. produtos
+
+id (PK)
+
+nome
+
+preco
+
+estoque
+
+4. vendas
+
+id (PK)
+
+cliente_id (FK → clientes.id)
+
+data_venda
+
+total
+
+5. itens_venda
+
+id (PK)
+
+venda_id (FK → vendas.id)
+
+produto_id (FK → produtos.id)
+
+quantidade
+
+preco_unitario
