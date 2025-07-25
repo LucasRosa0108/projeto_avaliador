@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox, ttk
 from app.controllers.cliente_controller import ClienteController
-from app.views.menu_view import MenuView
+# ❌ Removido o import direto de MenuView para evitar importação circular
 
 class ClienteView:
     def __init__(self, master):
@@ -111,5 +111,6 @@ class ClienteView:
         self.selecionado_id = None
 
     def voltar_menu(self):
+        from app.views.menu_view import MenuView  # ✅ Importação movida para dentro da função
         self.frame.destroy()
         MenuView(self.master)
