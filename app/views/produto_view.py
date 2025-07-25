@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox, ttk
 from app.controllers.produto_controller import ProdutoController
-from app.views.menu_view import MenuView
 
 class ProdutoView:
     def __init__(self, master):
@@ -124,4 +123,5 @@ class ProdutoView:
 
     def voltar_menu(self):
         self.frame.destroy()
+        from app.views.menu_view import MenuView
         MenuView(self.master)
